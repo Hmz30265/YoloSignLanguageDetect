@@ -1,0 +1,13 @@
+train: data/asl_dataset/train/images
+val: data/asl_dataset/valid/images
+test: data/asl_dataset/test/images
+
+nc: 26
+names: ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+
+roboflow:
+  workspace: yolo-bkh56
+  project: signlanguage-hcsec
+  version: 3
+  license: MIT
+  url: https://universe.roboflow.com/yolo-bkh56/signlanguage-hcsec/dataset/3
