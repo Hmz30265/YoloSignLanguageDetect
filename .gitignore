@@ -1,0 +1,21 @@
+# Ignore everything in the cloned yolov10 repo except 'runs'
+yolov10/*
+!yolov10/runs/
+
+# Ignore all datasets except ayuraj_dataset
+datasets/data/*
+!datasets/data/ayuraj_dataset/
+
+# Ignore unwanted system files or intermediates
+*.ipynb_checkpoints/
+*.log
+*.tmp
+__pycache__/
+.DS_Store
+
+# Ignore common model checkpoints (not manually included .pt files)
+*.pth
+*.ckpt
+*.mp4
+*.avi
+

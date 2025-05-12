@@ -1,6 +1,6 @@
-train: data/ayuraj_dataset/images/train
-val: data/ayuraj_dataset/images/val
-test: data/ayuraj_dataset/images/test
+train: data/ayuraj_dataset/train/images
+val: data/ayuraj_dataset/train/images
+test: data/ayuraj_dataset/train/images
 
 nc: 36
 
