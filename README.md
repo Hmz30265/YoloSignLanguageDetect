@@ -1,8 +1,5 @@
 # Real-Time ASL Translation Using YOLO
 
-[![Conference](https://img.shields.io/badge/ICLR-2025-blue)]()
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]()
-
 This project implements a **real-time American Sign Language (ASL) alphabet translation system** using the YOLO (You Only Look Once) object detection framework. Designed with accessibility in mind, this tool aims to bridge communication gaps for the deaf and hard-of-hearing community by recognizing static ASL letters from images or video streams.
 
 ## 🧠 Motivation
@@ -16,12 +13,45 @@ Millions of people rely on sign language as their primary mode of communication.
 - 🎥 Real-time letter sequence recognition from webcam streams.
 - 🚀 Establish a foundation for future dynamic gesture and sentence-level translation.
 
+## 📁 Project Structure
+```plaintext
+YoloSignLanguageDetect/
+├── models/             # YOLOv8 & YOLOv10 configs and weights
+├── data.tar.gz         # data compressed file
+├── main.py             # main python script to start the detection
+├── CSCI5527_Project_Report.pdf # written project report
+└── README.md
+```
+
 ## 📁 Dataset
 
 - **Primary**: Kaggle ASL Alphabet YOLO-formatted Dataset  
   [Dataset Link](https://www.kaggle.com/datasets/daskoushik/sign-language-dataset-for-yolov7)
 - **Additional**: Ayuraj's ASL Alphabet & Digits Dataset  
   [Dataset Link](https://www.kaggle.com/datasets/ayuraj/asl-dataset)
+
+## 🚀 How to Run
+
+1️⃣ **Clone the repository**
+```
+git clone https://github.com/Hmz30265/YoloSignLanguageDetect.git
+cd YoloSignLanguageDetect
+```
+
+2️⃣ Install dependencies
+
+```
+pip install ultralytics
+```
+
+3️⃣ Run the detector
+```
+python main.py --model model/my_model_sign.pt --model2 model/my_model_similar_mn.pt --source usb0 
+```
+- `--source` can be:
+  - `usb0` (default USB camera)
+  - An image file path (e.g. `image.jpg`)
+
 
 ## 🛠️ Model Overview
 
@@ -75,5 +105,23 @@ Real-time predictions from webcam input:
 - Use dynamic frame buffering instead of a fixed voting window.
 - Improve segmentation and class isolation for hybrid datasets.
 - Expand to dynamic ASL gestures and sentence-level translation.
+
+## 👥 Contributors
+
+- Crystal Wen
+
+- Lulin Liu
+
+- Matt He
+
+- Kevin Lin
+
+University of Minnesota
+
+
+
+
+
+
 
 

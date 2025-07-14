@@ -171,8 +171,6 @@ while True:
 
     # Extract results
     detections = results[0].boxes
-    # print("The result of detection is:")
-    # print(detections)
 
     # Initialize variable for basic object counting example
     object_count = 0
@@ -201,8 +199,6 @@ while True:
 
         # Get bounding box confidence
         conf = detections[i].conf.item()
-        print(classname)
-        print(conf)
         # Draw box if confidence threshold is high enough
         if conf > 0.5:
 
