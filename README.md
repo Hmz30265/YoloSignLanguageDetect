@@ -1,5 +1,7 @@
 # Real-Time ASL Translation Using YOLO
 
+![Model show](img\val_batch1_pred.jpg)
+
 This project implements a **real-time American Sign Language (ASL) alphabet translation system** using the YOLO (You Only Look Once) object detection framework. Designed with accessibility in mind, this tool aims to bridge communication gaps for the deaf and hard-of-hearing community by recognizing static ASL letters from images or video streams.
 
 ## 🧠 Motivation
@@ -17,6 +19,7 @@ Millions of people rely on sign language as their primary mode of communication.
 ```plaintext
 YoloSignLanguageDetect/
 ├── models/             # YOLOv8 & YOLOv10 configs and weights
+├── img/                # image forlder to store pictures for readme
 ├── data.tar.gz         # data compressed file
 ├── main.py             # main python script to start the detection
 ├── CSCI5527_Project_Report.pdf # written project report
